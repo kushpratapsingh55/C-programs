@@ -1,0 +1,73 @@
+////functions programs 
+
+to find out cube of a number 
+#include <stdio.h>
+#include <math.h>
+void cube (int n);
+void main()
+{
+    int n;
+    printf("enter the number of which u wanna find cube \n");
+    scanf("%d",&n);
+    cube (n);
+}
+void cube (int n){
+    printf("cube of a number that u entered is \n");
+    printf("%f\n",pow(n,3));
+}
+
+to find out the max and min between 2 numbers 
+
+#include <stdio.h>
+#include <math.h>
+void maxmin (int ,int );
+void main()
+{
+    int a,b;
+    printf("enter the number of which u wanna find max or min  \n");
+    scanf("%d%d",&a,&b);
+    maxmin (a,b);
+}
+void maxmin (int a,int b){
+    printf("two numbers after finding max or min is \n");
+  if (a>b)
+  printf("max is =%d min is =%d",a,b);
+  else 
+  printf("max is =%d min is =%d",b,a);
+}
+
+
+to find all prime between a given interval
+
+
+#include <stdio.h>
+#include <math.h>
+void prime (int a[],int );
+void main()
+{
+    int n;printf("enter the size upto which u wanna find prime numbers\n");
+    scanf("%d",&n);
+    int a[n];
+    for (int i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    prime(a,n);}
+    void prime (int a[],int n){
+        for (int i=0;i<n;i++){
+            int c=0;
+            for (int j=1;j<=n;j++){
+                if (a[i]%j==0)
+                c++;
+            }if (c==2)
+            printf(" %d is prime",a[i]);
+        }
+    
+        
+    }
+
+
+
+    
+    
+    
+    
+    
